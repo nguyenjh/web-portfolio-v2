@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julie Nguyen | Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            border: solid 3px black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Julie Nguyen | Web Portfolio</a></h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="workExp.html">Work Experience</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="experiments.html">Experiments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./media/technologyBackgroundVideoLoopForWebsite.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <p><cite>Technology Background Video Loop For Website</cite> by WorldSoftZone on YouTube.</p>
+
+    <hello-world></hello-world>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello world!");
+            }
+        }
+        customElements.define("hello-world", HelloWorld);
+    </script>
+    <noscript>Your browser does not support JavaScript.</noscript>
+
+    <main>
+        <section>
+            <h2>
+                <span>Hello, I'm <em>Julie Nguyen</em>.</span>
+            </h2>
+            <p>
+                <strong>A web developer.</strong>
+            </p>
+            <button><b>VIEW MY WORK</b></button>
+        </section>
+    </main>
+
+    <hr>
+    
+    <footer>
+        <p>Julie Nguyen | 2025</p>
+    </footer>
+</body>
+</html>
