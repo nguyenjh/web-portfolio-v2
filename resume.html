@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julie Nguyen | Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            border: solid 3px black;
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header id="resumepageHeader">
         <h1><a href="index.html">Julie Nguyen | Web Portfolio</a></h1>
         <nav>
             <ul>
@@ -22,21 +19,21 @@
                 <li><a href="workExp.html">Work Experience</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="experiments.html">Experiments</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Resume</h2>
-            <iframe src="https://docs.google.com/document/d/e/2PACX-1vTn8zSl4kqEImbSdDis-nNol6jf89JASzIqiOmCem_H-Q_RUK2AObXkEmaNe14DaCy0aw7LIb-_fkFz/pub?embedded=true" width="800px" height="1000px"></iframe>
+    <img id="backgroundImg" src="./media/laptop.avif" alt="laptop photo">
+
+    <main id="resumepageMain">
+        <section id="resumepageSection">
+            <iframe src="./media/Julie_Nguyen_Resume.pdf" width="800px" height="1000px">
+                This browser does not support PDFs. Please download the PDF to view it: <a href="./media/Julie_Nguyen_Resume.pdf">Download PDF</a>.
+            </iframe>
         </section>
     </main>
-
-    <hr>
     
-    <footer>
+    <footer id="resumepageFooter">
         <p>Julie Nguyen | 2025</p>
     </footer>
 </body>

@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julie Nguyen | Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            border: solid 3px black;
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header id="aboutpageHeader">
         <h1><a href="index.html">Julie Nguyen | Web Portfolio</a></h1>
         <nav>
             <ul>
@@ -22,80 +19,72 @@
                 <li><a href="workExp.html">Work Experience</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="experiments.html">Experiments</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <hgroup>
-                <h2>About Me</h2>
-                <p>Hello, I'm <i>Julie Nguyen</i></p>
-            </hgroup>
-            <img src="./media/portrait.png" alt="portrait photo" width="300">
-                <article>
-                    <h3>Background:</h3>
-                    <p>I am currently a 3rd year computer science student studying at the University of California, San Diego. <br />
-                        Additionally, I am a first-generation college student interested in connecting with others in the computer science field, and I'm seeking opportunities both in industry and academia.</p>
-                </article>
-                
-                <article>
-                    <details>
-                        <summary><strong>Languages:</strong></summary>
-                        <ul>
-                            <li><abbr title="Advanced RISC Machines">ARM</abbr> Assembly</li>
-                            <li>C</li>
-                            <li>C#</li>
-                            <li>C++</li>
-                            <li>Git Commands</li>
-                            <li><abbr title="Hypertext Markup Language">HTML</abbr></li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                        </ul>
-                    </details>
-                </article>
-                <hr>
-                <article>
-                    <details>
-                        <summary><strong>Tech Stack:</strong></summary>
-                        <table>
-                            <caption>Technologies | Softwares</caption>
-                            <colgroup>
-                                <!--Will eventually use these for column styling-->
-                                <col span="1">
-                                <col span="2">
-                            </colgroup>
-                            <tr>
-                                <th>Technologies</th>
-                                <th>Softwares</th>
-                            </tr>
-                            <tr>
-                                <td>Express.js</td>
-                                <td>GitHub</td>
-                            </tr>
-                            <tr>
-                                <td>MongoDB</td>
-                                <td>Visual Studio Code</td>
-                            </tr>
-                            <tr>
-                                <td>Node.js</td>
-                                <td>Insomnia</td>
-                            </tr>
-                            <tr>
-                                <td>React</td>
-                                <td>Unity Game Engine</td>
-                            </tr>
-                        </table>
-                    </details>
-                </article>
+    <img id="backgroundImg" src="./media/laptop.avif" alt="laptop photo">
+
+    <main id="aboutpageMain">
+        <section id="aboutpageSection">
+            <section id="aboutpageIntro">
+                <img src="./media/portrait.png" alt="julie portrait photo" loading="lazy" width="300">
+                <hgroup>
+                    <h2>ABOUT ME</h2>
+                    <p>Hello, I'm <span>Julie Nguyen</span></p>
+                </hgroup>
+            </section>
+            
+            <article>
+                <h3>Background:</h3>
+                <p>I am currently a 3rd year computer science student studying at the University of California, San Diego. <br /> <br />
+                    Additionally, I am a first-generation college student interested in connecting with others in the computer science field, and I'm seeking opportunities both in industry and academia.</p>
+            </article>
+            
+            <article>
+                <h3><strong>Languages:</strong></h3>
+                <ul>
+                    <li>ARM Assembly</li>
+                    <li>C</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Git Commands</li>
+                    <li>HTML</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3><strong>Tech Stack:</strong></h3>
+                <table>
+                    <tr>
+                        <th><strong>Technologies</strong></th>
+                        <th><strong>Softwares</strong></th>
+                    </tr>
+                    <tr>
+                        <td>Express.js</td>
+                        <td>GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>MongoDB</td>
+                        <td>Visual Studio Code</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>Insomnia</td>
+                    </tr>
+                    <tr>
+                        <td>React</td>
+                        <td>Unity Game Engine</td>
+                    </tr>
+                </table>
+            </article>
         </section>
     </main>
-
-    <hr>
     
-    <footer>
+    <footer id="aboutpageFooter">
         <p>Julie Nguyen | 2025</p>
     </footer>
 </body>
